@@ -6,6 +6,7 @@ import (
 
 	"github.com/benny1213/etLab_BE/pkg/setting"
 	"github.com/jinzhu/gorm"
+	_ "github.com/jinzhu/gorm/dialects/mysql" // fuck go lint
 )
 
 var db *gorm.DB
