@@ -3,6 +3,7 @@ module github.com/benny1213/etLab_BE
 go 1.15
 
 require (
+	github.com/EDDYCJY/go-gin-example v0.0.0-20201228125222-28f372bf41f9
 	github.com/astaxie/beego v1.12.3
 	github.com/dgrijalva/jwt-go v3.2.0+incompatible
 	github.com/gin-gonic/gin v1.6.3
@@ -29,6 +30,7 @@ replace (
 	github.com/benny1213/etLab_BE/middleware/jwt => ./project/etLab_BE/middlewarejwt
 	github.com/benny1213/etLab_BE/models => ./project/etLab_BE/models
 	github.com/benny1213/etLab_BE/pkg/e => ./project/etLab_BE/pkg/e
+	github.com/benny1213/etLab_BE/pkg/logging => ./project/etLab_BE/pkg/logging
 	github.com/benny1213/etLab_BE/pkg/setting => ./project/etLab_BE/pkg/setting
 	github.com/benny1213/etLab_BE/pkg/util => ./project/etLab_BE/pkg/util
 	github.com/benny1213/etLab_BE/routers => ./project/etLab_BE/routers

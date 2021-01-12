@@ -5,11 +5,13 @@ import (
 	"net/http"
 
 	"github.com/benny1213/etLab_BE/models"
+	"github.com/benny1213/etLab_BE/pkg/logging"
 	"github.com/benny1213/etLab_BE/pkg/setting"
 	"github.com/benny1213/etLab_BE/routers"
 )
 
 func main() {
+	logging.Info("startApp")
 	setting.Setup()
 	models.Setup()
 	router := routers.InitRouter()

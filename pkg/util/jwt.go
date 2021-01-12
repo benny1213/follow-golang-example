@@ -1,8 +1,10 @@
 package util
 
 import (
+	"fmt"
 	"time"
 
+	"github.com/EDDYCJY/go-gin-example/pkg/logging"
 	"github.com/benny1213/etLab_BE/pkg/setting"
 	jwt "github.com/dgrijalva/jwt-go"
 )
@@ -45,6 +47,7 @@ func ParseToken(token string) (*Claims, error) {
 		if claims, ok := tokenClaims.Claims.(*Claims); ok && tokenClaims.Valid {
 			return claims, nil
 		}
+		logging.Info(fmt.Sprintf("鉴权失败 tokenClaims： %v", tokenClaims))
 	}
 	return nil, err
 }
