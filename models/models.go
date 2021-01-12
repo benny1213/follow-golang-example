@@ -14,10 +14,11 @@ var db *gorm.DB
 // Model ：基本表结构
 type Model struct {
 	ID         int `gorm:"primary_key" json:"id"`
-	CreateOn   int `json:"created_on"`
+	CreatedOn  int `json:"created_on"`
 	ModifiedOn int `json:"modified_on"`
 }
 
+// Setup : 初始化数据库
 func Setup() {
 	var (
 		err                                               error
