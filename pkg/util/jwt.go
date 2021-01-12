@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"time"
 
-	"github.com/EDDYCJY/go-gin-example/pkg/logging"
+	"github.com/benny1213/etLab_BE/pkg/logging"
 	"github.com/benny1213/etLab_BE/pkg/setting"
 	jwt "github.com/dgrijalva/jwt-go"
 )
