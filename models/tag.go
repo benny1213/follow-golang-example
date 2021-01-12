@@ -1,5 +1,7 @@
 package models
 
+import "fmt"
+
 // Tag : 数据库中tag的结构
 type Tag struct {
 	Model
@@ -12,6 +14,7 @@ type Tag struct {
 
 // GetTags : 分页获取tags
 func GetTags(pageNum int, pageSize int, maps interface{}) (tags []Tag) {
+	fmt.Printf("db: %v", db)
 	db.Where(maps).Offset(pageNum).Limit(pageSize).Find(&tags)
 	return
 }
