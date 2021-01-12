@@ -1,10 +1,10 @@
 package routers
 
 import (
-	_ "github.com/benny1213/etLab_BE/docs" // docs
-	"github.com/benny1213/etLab_BE/middleware/jwt"
-	"github.com/benny1213/etLab_BE/pkg/setting"
-	"github.com/benny1213/etLab_BE/routers/api"
+	_ "github.com/benny1213/follow-golang-example/docs" // docs
+	"github.com/benny1213/follow-golang-example/middleware/jwt"
+	"github.com/benny1213/follow-golang-example/pkg/setting"
+	"github.com/benny1213/follow-golang-example/routers/api"
 	"github.com/gin-gonic/gin"
 	"github.com/swaggo/gin-swagger"
 	"github.com/swaggo/gin-swagger/swaggerFiles"

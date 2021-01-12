@@ -1,4 +1,4 @@
-module github.com/benny1213/etLab_BE
+module github.com/benny1213/follow-golang-example
 
 go 1.15
 
@@ -35,15 +35,15 @@ require (
 )
 
 replace (
-	github.com/benny1213/etLab_BE/conf => ./project/etLab_BE/pkg/conf
-	github.com/benny1213/etLab_BE/docs => ./project/etLab_BE/docs
-	github.com/benny1213/etLab_BE/middleware => ./project/etLab_BE/middleware
-	github.com/benny1213/etLab_BE/middleware/jwt => ./project/etLab_BE/middlewarejwt
-	github.com/benny1213/etLab_BE/models => ./project/etLab_BE/models
-	github.com/benny1213/etLab_BE/pkg/e => ./project/etLab_BE/pkg/e
-	github.com/benny1213/etLab_BE/pkg/logging => ./project/etLab_BE/pkg/logging
-	github.com/benny1213/etLab_BE/pkg/setting => ./project/etLab_BE/pkg/setting
-	github.com/benny1213/etLab_BE/pkg/util => ./project/etLab_BE/pkg/util
-	github.com/benny1213/etLab_BE/routers => ./project/etLab_BE/routers
-	github.com/benny1213/etLab_BE/routers/api => ./project/etLab_BE/routers/api
+	github.com/benny1213/follow-golang-example/conf => ./project/follow-golang-example/pkg/conf
+	github.com/benny1213/follow-golang-example/docs => ./project/follow-golang-example/docs
+	github.com/benny1213/follow-golang-example/middleware => ./project/follow-golang-example/middleware
+	github.com/benny1213/follow-golang-example/middleware/jwt => ./project/follow-golang-example/middlewarejwt
+	github.com/benny1213/follow-golang-example/models => ./project/follow-golang-example/models
+	github.com/benny1213/follow-golang-example/pkg/e => ./project/follow-golang-example/pkg/e
+	github.com/benny1213/follow-golang-example/pkg/logging => ./project/follow-golang-example/pkg/logging
+	github.com/benny1213/follow-golang-example/pkg/setting => ./project/follow-golang-example/pkg/setting
+	github.com/benny1213/follow-golang-example/pkg/util => ./project/follow-golang-example/pkg/util
+	github.com/benny1213/follow-golang-example/routers => ./project/follow-golang-example/routers
+	github.com/benny1213/follow-golang-example/routers/api => ./project/follow-golang-example/routers/api
 )

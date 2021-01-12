@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"log"
 
-	"github.com/benny1213/etLab_BE/pkg/setting"
+	"github.com/benny1213/follow-golang-example/pkg/setting"
 	"github.com/jinzhu/gorm"
 	_ "github.com/jinzhu/gorm/dialects/mysql" // fuck go lint
 )

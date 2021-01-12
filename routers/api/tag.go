@@ -4,10 +4,10 @@ import (
 	"net/http"
 
 	"github.com/astaxie/beego/validation"
-	"github.com/benny1213/etLab_BE/models"
-	"github.com/benny1213/etLab_BE/pkg/e"
-	"github.com/benny1213/etLab_BE/pkg/setting"
-	"github.com/benny1213/etLab_BE/pkg/util"
+	"github.com/benny1213/follow-golang-example/models"
+	"github.com/benny1213/follow-golang-example/pkg/e"
+	"github.com/benny1213/follow-golang-example/pkg/setting"
+	"github.com/benny1213/follow-golang-example/pkg/util"
 	"github.com/gin-gonic/gin"
 	"github.com/unknwon/com"
 )

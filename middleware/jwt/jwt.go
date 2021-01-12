@@ -4,8 +4,8 @@ import (
 	"net/http"
 	"time"
 
-	"github.com/benny1213/etLab_BE/pkg/e"
-	"github.com/benny1213/etLab_BE/pkg/util"
+	"github.com/benny1213/follow-golang-example/pkg/e"
+	"github.com/benny1213/follow-golang-example/pkg/util"
 	"github.com/gin-gonic/gin"
 )
 

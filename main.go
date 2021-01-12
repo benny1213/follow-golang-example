@@ -5,10 +5,10 @@ import (
 	"log"
 	"syscall"
 
-	"github.com/benny1213/etLab_BE/models"
-	"github.com/benny1213/etLab_BE/pkg/logging"
-	"github.com/benny1213/etLab_BE/pkg/setting"
-	"github.com/benny1213/etLab_BE/routers"
+	"github.com/benny1213/follow-golang-example/models"
+	"github.com/benny1213/follow-golang-example/pkg/logging"
+	"github.com/benny1213/follow-golang-example/pkg/setting"
+	"github.com/benny1213/follow-golang-example/routers"
 	"github.com/fvbock/endless"
 )
 

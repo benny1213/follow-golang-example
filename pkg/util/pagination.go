@@ -1,7 +1,7 @@
 package util
 
 import (
-	"github.com/benny1213/etLab_BE/pkg/setting"
+	"github.com/benny1213/follow-golang-example/pkg/setting"
 	"github.com/gin-gonic/gin"
 	"github.com/unknwon/com"
 )
