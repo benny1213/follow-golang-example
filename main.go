@@ -10,8 +10,9 @@ import (
 )
 
 func main() {
-	router := routers.InitRouter()
+	setting.Setup()
 	models.Setup()
+	router := routers.InitRouter()
 
 	s := &http.Server{
 		Addr:           fmt.Sprintf(":%d", setting.HTTPPort),

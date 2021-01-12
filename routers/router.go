@@ -1,6 +1,7 @@
 package routers
 
 import (
+	"github.com/benny1213/etLab_BE/middleware/jwt"
 	"github.com/benny1213/etLab_BE/pkg/setting"
 	"github.com/benny1213/etLab_BE/routers/api"
 	"github.com/gin-gonic/gin"
@@ -13,7 +14,11 @@ func InitRouter() *gin.Engine {
 	r.Use(gin.Recovery())
 	gin.SetMode(setting.RunMod)
 
+	//获取token
+	r.GET("/auth", api.GetAuth)
+
 	apiGroup := r.Group("/api")
+	apiGroup.Use(jwt.JWT())
 	{
 		//获取标签列表
 		apiGroup.GET("/tags", api.GetTags)

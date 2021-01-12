@@ -1,7 +1,6 @@
 package models
 
 import (
-	"fmt"
 	"time"
 
 	"github.com/jinzhu/gorm"
@@ -31,7 +30,6 @@ func (tag *Tag) BeforeUpdate(scope *gorm.Scope) error {
 
 // GetTags : 分页获取tags
 func GetTags(pageNum int, pageSize int, maps interface{}) (tags []Tag) {
-	fmt.Printf("db: %v", db)
 	db.Where(maps).Offset(pageNum).Limit(pageSize).Find(&tags)
 	return
 }
