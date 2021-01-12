@@ -1,10 +1,13 @@
 package routers
 
 import (
+	_ "github.com/benny1213/etLab_BE/docs" // docs
 	"github.com/benny1213/etLab_BE/middleware/jwt"
 	"github.com/benny1213/etLab_BE/pkg/setting"
 	"github.com/benny1213/etLab_BE/routers/api"
 	"github.com/gin-gonic/gin"
+	"github.com/swaggo/gin-swagger"
+	"github.com/swaggo/gin-swagger/swaggerFiles"
 )
 
 // InitRouter : 创建路由
@@ -14,6 +17,8 @@ func InitRouter() *gin.Engine {
 	r.Use(gin.Recovery())
 	gin.SetMode(setting.RunMod)
 
+	// swagger 路由
+	r.GET("/swagger/*any", ginSwagger.WrapHandler(swaggerFiles.Handler))
 	//获取token
 	r.GET("/auth", api.GetAuth)
 
